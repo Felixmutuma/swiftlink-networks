@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/SwiftLink Networks logo design.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container nav-content">
-        <h2 className="logo">FelixNet</h2>
+        <img src={logo} alt="SwiftLink Networks Logo" className="logo" />
         <button 
           className="hamburger"
           onClick={toggleMenu}

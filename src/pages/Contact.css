@@ -1,0 +1,54 @@
+.contact-hero {
+  background: url("https://images.unsplash.com/photo-1521791055366-0d553872125f") no-repeat center/cover;
+  height: 50vh;
+  position: relative;
+  color: white;
+}
+
+.contact-hero .overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+}

@@ -32,10 +32,11 @@
 }
 
 .logo {
-  color: #f1eded;
-  font-size: 24px;
+  height: 30px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
   margin: 0;
-  font-weight: 700;
 }
 
 .hamburger {
@@ -93,13 +94,15 @@
   }
 
   .logo {
-    font-size: 20px;
+    height: 45px;
+    max-width: 170px;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 18px;
+    height: 40px;
+    max-width: 140px;
   }
 
   .nav-content {
